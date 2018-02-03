@@ -8,7 +8,8 @@ def home(request):
     is_cached = ('geodata' in request.session)
 
     if not is_cached:
-        response = requests.get('http://freegeoip.net/json/')
+        ip_address = request.META.get('HTTP_X_FORWARDED_FOR', '')
+        response = requests.get('http://freegeoip.net/json/%s' % ip_address)
         request.session['geodata'] = response.json()
 
     geodata = request.session['geodata']
