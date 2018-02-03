@@ -1,0 +1,4 @@
+dj-database-url==0.4.2
+Django==2.0.2
+requests==2.18.4
+PyGithub==1.35
