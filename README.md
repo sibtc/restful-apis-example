@@ -5,7 +5,7 @@
 
 This project is just an example on how to consume RESTful APIs using Django.
 
-![RESTful APIs Example Screenshot](https://d2ffutrenqvap3.cloudfront.net/items/2v0D3l1e3W0D413d1601/Screen%20Shot%202018-02-03%20at%2016.15.08.png)
+![RESTful APIs Example Screenshot](https://dzwonsemrish7.cloudfront.net/items/2v0D3l1e3W0D413d1601/Screen%20Shot%202018-02-03%20at%2016.15.08.png)
 
 Read the blog post [How to Use RESTful APIs with Django](https://simpleisbetterthancomplex.com/tutorial/2018/02/03/how-to-use-restful-apis-with-django.html).
 
