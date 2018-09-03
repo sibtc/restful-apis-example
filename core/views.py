@@ -9,7 +9,8 @@ def home(request):
 
     if not is_cached:
         ip_address = request.META.get('HTTP_X_FORWARDED_FOR', '')
-        response = requests.get('http://freegeoip.net/json/%s' % ip_address)
+        params = {'access_key': settings.IPSTACK_API_KEY}
+        response = requests.get('http://api.ipstack.com/%s' % ip_address, params=params)
         request.session['geodata'] = response.json()
 
     geodata = request.session['geodata']
