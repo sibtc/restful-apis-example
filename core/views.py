@@ -15,10 +15,10 @@ def home(request):
     geodata = request.session['geodata']
 
     return render(request, 'core/home.html', {
-        'ip': geodata['ip'],
-        'country': geodata['country_name'],
-        'latitude': geodata['latitude'],
-        'longitude': geodata['longitude'],
+        'ip': geodata.get('ip'),
+        'country': geodata.get('country_name', ''),
+        'latitude': geodata.get('latitude', ''),
+        'longitude': geodata.get('longitude', ''),
         'api_key': settings.GOOGLE_MAPS_API_KEY,
         'is_cached': is_cached
     })
